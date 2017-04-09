@@ -1,0 +1,95 @@
+{
+  "teammembers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "workdays": [
+        {
+          "name": "Monday",
+          "blocks": [
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "blocks": [
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "blocks": [
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "blocks": [
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            }
+          ]
+        },
+        {
+          "name": "Friday",
+          "blocks": [
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            },
+            {
+              "location": "work"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

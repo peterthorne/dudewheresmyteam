@@ -1,0 +1,29 @@
+{
+  "name": "dudewheresmyteam",
+  "version": "1.0.0",
+  "description": "This app allows a team to display there presence status for the current week",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peterthorne/dudewheremyteam.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Thorne",
+  "license": "",
+  "dependencies": {
+    "dns": "^0.2.2",
+    "express": "4.13.0",
+    "json-server": "0.9.6"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "wiredep": "^4.0.0"
+  }
+}

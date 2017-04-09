@@ -1,0 +1,108 @@
+body, html {
+    background-color: #428bca;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mainpage{
+    margin: 10px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #428bca;
+    font-size: 1.2vw;
+}
+
+/* top bar structure */
+.topbar{
+    padding: 5px;
+}
+.topbarcell{
+    border: 0px solid red;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.refreshbutton{
+    border: 0px solid red;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: small;
+    text-decoration: underline;
+}
+.menubar{
+    border: 0px solid red;
+}
+.menubutton{
+    border: 0px solid red;
+    font-size: 1.2vw;
+    border-radius: 8px;
+}
+
+/* presence table structure */
+.table{
+}
+.tableheader{
+    border: 0px solid red;
+}
+.tableheadercell{
+    border: 0px solid red;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #428bca;
+    color: white;
+}
+.tableheadercellcontent{
+    border: 0px solid red;
+    text-align: center;
+}
+.tableheadercellcontentleft{
+    border: 0px solid red;
+}
+
+.tablememberrow{
+    border-top: 1px solid lightgray;
+    padding: 3px;
+}
+.namecell{
+    border: 0px solid red;
+}
+.weekdaycell{
+    padding: 0px;
+    border: 0px solid red;
+    border-left: 1px solid lightgray; 
+}
+.weekdayquartercell{
+    padding: 0px;
+    border: 0px solid red;
+}
+.weekdayquartercellcontent {
+    border: 0px solid red;
+    border-radius: 7px;
+  /*  border-left: 1px solid black;*/
+}
+
+/* color presence types */
+.home {
+    background-color: #428bca;
+}
+
+.offwork {
+    background-color: #d9534f;
+}
+
+.course {
+    background-color: #ed9c28;
+}
+
+/* prevent selection */
+div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

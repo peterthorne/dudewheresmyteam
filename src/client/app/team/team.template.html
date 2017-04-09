@@ -1,0 +1,39 @@
+<main class="mainpage" ng-controller="teamController">
+  
+    <!--Week indicator & Tool buttons-->
+    <header class="topbar row container-fluid">      
+      <div class="topbarcell col-md-2">Week {{date | date:'ww'}}</div>      
+      <div class="menubar col-md-8 btn-group" data-toggle="buttons">
+        <div class="menubutton col-md-3 btn btn-default active" ng-click="selectTool(0)"><input type="radio" name="options" id="option1" autocomplete="off" checked>In the office</div>
+        <div class="menubutton col-md-3 btn btn-primary" ng-click="selectTool(1)"><input type="radio" name="options" id="option2" autocomplete="off">Working elsewhere</div>
+        <div class="menubutton col-md-3 btn btn-danger" ng-click="selectTool(2)"><input type="radio" name="options" id="option3" autocomplete="off">Off work</div>
+        <div class="menubutton col-md-3 btn btn-warning" ng-click="selectTool(3)"><input type="radio" name="options" id="option4" autocomplete="off">On a course</div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="topbarcell col-md-2">&nbsp</div>
+    </header>
+
+    <!--Presence data rows for each team member-->
+    <section class="table container-fluid" ng-mouseup="deactivateTool()" ng-mouseleave="deactivateTool()">      
+      <div class="tableheader row">
+        <div class="tableheadercell col-md-2 hidden-xs">
+          <div class="tableheadercellcontentleft">Team members</div>
+        </div>
+        <div class="tableheadercell col-md-2 hidden-xs" ng-repeat="workday in workdays">
+          <div class="tableheadercellcontent">{{workday}}</div>
+        </div>
+      </div>      
+      <div class="tablememberrow row" ng-repeat="member in team | orderBy : 'name'">        
+        <div class="namecell col-md-2">{{member.name}}</div>        
+        <div class="weekdaycell col-md-2" ng-repeat="workday in member.workdays">
+          <div class="weekdayquartercell col-md-3" ng-repeat="block in workday.blocks">
+            <div class="weekdayquartercellcontent {{block.location}}" ng-mousedown="activateTool(); applyTool(member, block)" ng-mousemove="applyTool(member, block)" ng-mouseup="deactivateTool()">&nbsp</div>
+          </div>
+        </div>
+      </div>      
+      <div class="tablememberrow row">                
+        <div class="namecell col-md-12"><div class="glyphicon glyphicon-plus-sign" ng-click="showAddTeamMemberView()"></div></div>
+      </div> 
+    </section>
+
+</main>

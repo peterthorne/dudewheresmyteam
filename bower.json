@@ -1,0 +1,32 @@
+{
+  "name": "dudewheresmyteam",
+  "description": "This app allows a team to display there presence status for the current week",
+  "main": "index.js",
+  "authors": [
+    "Peter Thorne"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/peterthorne/dudewheresmyteam",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  }
+}
